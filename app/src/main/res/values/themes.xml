@@ -13,4 +13,8 @@
         <item name="android:statusBarColor">@color/emerald</item>
         <!-- Customize your theme here. -->
     </style>
+
+    <style name="Theme.GdanskPostcards.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.GdanskPostcards.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
 </resources>

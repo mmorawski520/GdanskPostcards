@@ -1,4 +1,4 @@
-package com.example.gdanskpostcards.ui.gallery
+package com.zschie.gdanskpostcards.ui.gallery
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
