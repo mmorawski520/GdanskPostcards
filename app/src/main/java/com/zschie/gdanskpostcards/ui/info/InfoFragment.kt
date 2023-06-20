@@ -1,18 +1,14 @@
-package com.zschie.gdanskpostcards.ui.gallery
+package com.zschie.gdanskpostcards.ui.info
 
 import android.os.Bundle
+import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.fragment.app.Fragment
-import com.zschie.gdanskpostcards.databinding.FragmentGalleryBinding
+import com.zschie.gdanskpostcards.databinding.FragmentInfoBinding
 
-class GalleryFragment : Fragment() {
-
-    private var _binding: FragmentGalleryBinding? = null
-
-    // This property is only valid between onCreateView and
-    // onDestroyView.
+class InfoFragment : Fragment() {
+    private var _binding: FragmentInfoBinding? = null
     private val binding get() = _binding!!
 
     override fun onCreateView(
@@ -20,7 +16,7 @@ class GalleryFragment : Fragment() {
         container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View {
-        _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+        _binding = FragmentInfoBinding.inflate(inflater, container, false)
         return binding.root
     }
 

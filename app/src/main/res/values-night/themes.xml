@@ -1,16 +1,5 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
-    <!-- Base application theme. -->
-    <style name="Theme.GdanskPostcards" parent="Theme.MaterialComponents.DayNight.NoActionBar">
-        <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/teagreen</item>
-        <item name="colorPrimaryVariant">@color/emerald</item>
-        <item name="colorOnPrimary">@color/beige</item>
-        <!-- Secondary brand color. -->
-        <item name="colorSecondary">@color/bittersweet</item>
-        <item name="colorSecondaryVariant">@color/bittersweet</item>
-        <item name="colorOnSecondary">@color/gunmetal</item>
-        <!-- Status bar color. -->
-        <item name="android:statusBarColor">@color/emerald</item>
-        <!-- Customize your theme here. -->
+    <style name="Theme.GdanskPostcards" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:forceDarkAllowed" tools:targetApi="q">false</item>
     </style>
 </resources>
