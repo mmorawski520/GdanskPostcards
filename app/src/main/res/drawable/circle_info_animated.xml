@@ -5,14 +5,14 @@
         android:state_focused="false"
         android:state_selected="false"
         android:state_pressed="false"
-        android:drawable="@drawable/circle_play_solid"
+        android:drawable="@drawable/circle_info_solid"
         android:color="@color/beige" />
 
     <item
         android:state_focused="false"
         android:state_selected="true"
         android:state_pressed="false"
-        android:drawable="@drawable/circle_play_solid"
+        android:drawable="@drawable/circle_info_solid"
         android:color="@color/beige"/>
 
 
@@ -21,20 +21,20 @@
         android:state_focused="true"
         android:state_selected="false"
         android:state_pressed="true"
-        android:drawable="@drawable/circle_play_solid_clicked"
+        android:drawable="@drawable/circle_info_solid_clicked"
         android:color="@color/black" />
 
     <item
         android:state_focused="true"
         android:state_selected="true"
         android:state_pressed="false"
-        android:drawable="@drawable/circle_play_solid_clicked"
+        android:drawable="@drawable/circle_info_solid_clicked"
         android:color="@color/black"/>
 
     <!-- Pressed -->
     <item
         android:state_pressed="true"
-        android:drawable="@drawable/circle_play_solid_clicked"
+        android:drawable="@drawable/circle_info_solid_clicked"
         android:color="@color/black"/>
 
 </selector>
