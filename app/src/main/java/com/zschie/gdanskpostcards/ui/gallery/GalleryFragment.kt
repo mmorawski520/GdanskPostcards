@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.TranslateAnimation
+import android.widget.Toast
 import androidx.annotation.DrawableRes
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -30,6 +31,7 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
     // onDestroyView.
     private val binding get() = _binding!!
+    private var index = 0;
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -49,12 +51,22 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
             )
         }
 
+        binding.imageView.setImageResource(photos[index].imageId);
+
         binding.btnNext.setOnClickListener {
-            binding.imageView.startAnimation(slide(400f))
+            if(index < photos.size - 1) {
+                binding.imageView.startAnimation(slide(400f))
+                this.index++
+                binding.imageView.setImageResource(photos[index].imageId);
+           }
         }
 
         binding.btnPrev.setOnClickListener {
-            binding.imageView.startAnimation(slide(-400f))
+            if(index > 0 ) {
+                binding.imageView.startAnimation(slide(-400f))
+                this.index--;
+                binding.imageView.setImageResource(photos[index].imageId);
+            }
         }
 
         binding.btnInfo.setOnClickListener {
@@ -86,6 +98,8 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
         return animation
     }
+
+
 
     fun onBackPressed(desc: String) {
         val builder = AlertDialog.Builder(context)
