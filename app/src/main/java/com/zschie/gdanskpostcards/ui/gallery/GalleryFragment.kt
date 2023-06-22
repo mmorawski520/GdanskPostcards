@@ -4,6 +4,8 @@ import android.app.AlertDialog
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
+import android.view.View.GONE
+import android.view.View.VISIBLE
 import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.TranslateAnimation
@@ -49,11 +51,15 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
         binding.imageView.setImageResource(photos[index].imageId)
 
+        this.changeBtnDescVisibility()
+
         binding.btnNext.setOnClickListener {
             if (index == photos.size - 1) {
                 this.index = 0
             }
             this.index++
+
+            this.changeBtnDescVisibility()
 
             binding.imageView.startAnimation(slide(400f))
             binding.imageView.setImageResource(photos[index].imageId)
@@ -66,13 +72,15 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
             }
             this.index--
 
+            this.changeBtnDescVisibility()
+
             binding.imageView.startAnimation(slide(-400f))
             binding.imageView.setImageResource(photos[index].imageId)
 
         }
 
         binding.btnInfo.setOnClickListener {
-            this.onBackPressed("some text")
+            this.onBackPressed(photos[0].info.toString())
         }
 
         binding.returnBtn.setOnClickListener {
@@ -101,8 +109,6 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
         return animation
     }
 
-
-
     private fun onBackPressed(desc: String) {
         val builder = AlertDialog.Builder(context)
 
@@ -116,11 +122,17 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
             dialog.cancel()
         }
 
-        builder.setIcon(R.drawable.circle_info_solid);
+        builder.setIcon(R.drawable.circle_info_solid)
 
 
         val alertDialog = builder.create()
         alertDialog.show()
+    }
+
+    private fun changeBtnDescVisibility(){
+        binding.btnInfo.visibility = VISIBLE
+        if (photos[index].info == null)
+            binding.btnInfo.visibility = GONE
     }
 
     companion object {
