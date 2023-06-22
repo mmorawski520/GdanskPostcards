@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string-array name="contributors_names">
-        <item>MANAGER</item>
+        <item>MANAGERS</item>
         <item>Marcin Kołacz</item>
+        <item>Alena Buroňová</item>
+        <item>Eva Vičková</item>
         <item>DEVELOPERS</item>
         <item>Mateusz Mazurek</item>
         <item>Mateusz Morawski</item>
