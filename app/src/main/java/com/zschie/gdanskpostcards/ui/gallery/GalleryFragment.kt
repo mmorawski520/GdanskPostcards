@@ -20,7 +20,7 @@ data class PhotoInfo(
 )
 
 
-class GalleryFragment(photos: List<PhotoInfo> = listOf()) : Fragment() {
+open class GalleryFragment(startsWith: String) : Fragment() {
 
     private var _binding: FragmentGalleryBinding? = null
 
@@ -83,5 +83,9 @@ class GalleryFragment(photos: List<PhotoInfo> = listOf()) : Fragment() {
 
         val alertDialog = builder.create()
         alertDialog.show()
+    }
+
+    companion object {
+        val drawableFields = R.drawable::class.java.fields.filter { it.name.startsWith("blured_") }
     }
 }
