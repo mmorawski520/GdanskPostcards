@@ -87,7 +87,7 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
         _binding = null
     }
 
-    fun slide(deltaX: Float): Animation {
+    private fun slide(deltaX: Float): Animation {
         val animation = TranslateAnimation(
             0.0f, deltaX,
             0.0f, 0.0f
@@ -103,7 +103,7 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
 
 
-    fun onBackPressed(desc: String) {
+    private fun onBackPressed(desc: String) {
         val builder = AlertDialog.Builder(context)
 
         builder.setMessage(desc)
