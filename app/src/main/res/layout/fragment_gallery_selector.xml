@@ -1,82 +1,77 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        xmlns:app="http://schemas.android.com/apk/res-auto"
-        xmlns:tools="http://schemas.android.com/tools"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_gravity="center"
-        android:orientation="vertical"
-        tools:context=".ui.gallery_selector.GallerySelectorFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    tools:context=".ui.gallery_selector.GallerySelectorFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="30dp"
+        >
 
         <Button
-                android:id="@+id/return_btn"
-                android:layout_width="60dp"
-                android:layout_height="60dp"
-                android:background="@android:drawable/ic_menu_revert"
-                app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toTopOf="parent" />
+            android:id="@+id/return_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:drawable/ic_menu_revert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
-                android:id="@+id/textView"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:gravity="center"
-                android:text="Menu"
-                android:layout_margin="10dp"
-                android:textSize="34sp"
-                app:layout_constraintTop_toTopOf="parent"
-                app:layout_constraintEnd_toEndOf="parent"
-                app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="Menu"
+            android:textSize="34sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
     </androidx.constraintlayout.widget.ConstraintLayout>
-
-    <Space
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_weight="1" />
+    <Button
+        android:id="@+id/btnGdansk"
+        style="?android:attr/buttonBarButtonStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_button_1"
+        android:text="Gdansk"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
     <Button
-            android:id="@+id/btnGdansk"
-            style="?android:attr/buttonBarButtonStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/custom_button_1"
-            android:text="Gdansk"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+        android:id="@+id/btnGdynia"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_button_2"
+        android:text="Gdynia"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
     <Button
-            android:id="@+id/btnGdynia"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/custom_button_2"
-            android:text="Gdynia"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+        android:id="@+id/btnSopot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_button_3"
+        android:text="Sopot"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
     <Button
-            android:id="@+id/btnSopot"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/custom_button_3"
-            android:text="Sopot"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
-
-    <Button
-            android:id="@+id/btnOthers"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/custom_button_4"
-            android:text="Other"
-            android:textColor="#FFFFFF"
-            android:textSize="16sp" />
+        android:id="@+id/btnOthers"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:background="@drawable/custom_button_4"
+        android:text="Other"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
 
 </LinearLayout>

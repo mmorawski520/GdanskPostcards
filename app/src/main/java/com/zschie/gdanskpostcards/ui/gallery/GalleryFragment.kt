@@ -54,19 +54,25 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
         binding.imageView.setImageResource(photos[index].imageId);
 
         binding.btnNext.setOnClickListener {
-            if(index < photos.size - 1) {
-                binding.imageView.startAnimation(slide(400f))
-                this.index++
-                binding.imageView.setImageResource(photos[index].imageId);
-           }
+            if (index == photos.size - 1) {
+                this.index = 0;
+            }
+            this.index++;
+
+            binding.imageView.startAnimation(slide(400f))
+            binding.imageView.setImageResource(photos[index].imageId);
+
         }
 
         binding.btnPrev.setOnClickListener {
-            if(index > 0 ) {
-                binding.imageView.startAnimation(slide(-400f))
-                this.index--;
-                binding.imageView.setImageResource(photos[index].imageId);
+            if (index == 0) {
+                this.index = photos.size - 1;
             }
+            this.index--;
+
+            binding.imageView.startAnimation(slide(-400f))
+            binding.imageView.setImageResource(photos[index].imageId);
+
         }
 
         binding.btnInfo.setOnClickListener {
@@ -98,7 +104,6 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
         return animation
     }
-
 
 
     fun onBackPressed(desc: String) {
