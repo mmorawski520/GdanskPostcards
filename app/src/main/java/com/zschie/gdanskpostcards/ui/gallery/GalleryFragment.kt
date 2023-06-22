@@ -1,16 +1,12 @@
 package com.zschie.gdanskpostcards.ui.gallery
 
 import android.app.AlertDialog
-import android.animation.ArgbEvaluator
-import android.animation.ObjectAnimator
-import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.TranslateAnimation
-import android.widget.Toast
 import androidx.annotation.DrawableRes
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
@@ -31,7 +27,7 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
     // onDestroyView.
     private val binding get() = _binding!!
-    private var index = 0;
+    private var index = 0
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -51,21 +47,21 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
             )
         }
 
-        binding.imageView.setImageResource(photos[index].imageId);
+        binding.imageView.setImageResource(photos[index].imageId)
 
         binding.btnNext.setOnClickListener {
             if(index < photos.size - 1) {
                 binding.imageView.startAnimation(slide(400f))
                 this.index++
-                binding.imageView.setImageResource(photos[index].imageId);
+                binding.imageView.setImageResource(photos[index].imageId)
            }
         }
 
         binding.btnPrev.setOnClickListener {
             if(index > 0 ) {
                 binding.imageView.startAnimation(slide(-400f))
-                this.index--;
-                binding.imageView.setImageResource(photos[index].imageId);
+                this.index--
+                binding.imageView.setImageResource(photos[index].imageId)
             }
         }
 
@@ -110,7 +106,7 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
         builder.setCancelable(false)
 
-        builder.setNegativeButton("Close") { dialog, which ->
+        builder.setNegativeButton("Close") { dialog, _ ->
             dialog.cancel()
         }
 
