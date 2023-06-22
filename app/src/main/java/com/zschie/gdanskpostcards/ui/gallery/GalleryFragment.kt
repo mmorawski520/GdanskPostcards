@@ -8,12 +8,18 @@ import android.view.ViewGroup
 import android.view.animation.Animation
 import android.view.animation.TranslateAnimation
 import android.widget.Toast
+import androidx.annotation.DrawableRes
 import androidx.fragment.app.Fragment
 import com.zschie.gdanskpostcards.R
 import com.zschie.gdanskpostcards.databinding.FragmentGalleryBinding
 
+data class PhotoInfo(
+    @DrawableRes val imageId: Int,
+    val info: String? = null
+)
 
-class GalleryFragment : Fragment() {
+
+class GalleryFragment(photos: List<PhotoInfo>) : Fragment() {
 
     private var _binding: FragmentGalleryBinding? = null
 
