@@ -1,5 +1,6 @@
 package com.zschie.gdanskpostcards.ui.gallery
 
+import android.app.AlertDialog
 import android.content.Context
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -23,7 +24,6 @@ class GalleryFragment(photos: List<PhotoInfo> = listOf()) : Fragment() {
 
     private var _binding: FragmentGalleryBinding? = null
 
-    // This property is only valid between onCreateView and
     // onDestroyView.
     private val binding get() = _binding!!
 
@@ -34,26 +34,16 @@ class GalleryFragment(photos: List<PhotoInfo> = listOf()) : Fragment() {
     ): View {
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
 
-        fun animate(deltaX: Float): Animation {
-            val animation = TranslateAnimation(
-                0.0f, deltaX,
-                0.0f, 0.0f
-            )
-
-            animation.duration = 50
-            animation.repeatCount = 1
-            animation.repeatMode = 2
-            animation.fillAfter = true
-
-            return animation
-        }
-
         binding.btnNext.setOnClickListener {
-            binding.imageView.startAnimation(animate(400f))
+            binding.imageView.startAnimation(slide(400f))
         }
 
         binding.btnPrev.setOnClickListener {
-            binding.imageView.startAnimation(animate(-400f))
+            binding.imageView.startAnimation(slide(-400f))
+        }
+
+        binding.btnInfo.setOnClickListener {
+            this.onBackPressed("some text")
         }
 
         return binding.root
@@ -64,4 +54,34 @@ class GalleryFragment(photos: List<PhotoInfo> = listOf()) : Fragment() {
         _binding = null
     }
 
+    fun slide(deltaX: Float): Animation {
+        val animation = TranslateAnimation(
+            0.0f, deltaX,
+            0.0f, 0.0f
+        )
+
+        animation.duration = 50
+        animation.repeatCount = 1
+        animation.repeatMode = 2
+        animation.fillAfter = true
+
+        return animation
+    }
+
+    fun onBackPressed(desc: String) {
+        val builder = AlertDialog.Builder(context)
+
+        builder.setMessage(desc)
+
+        builder.setTitle("Description")
+
+        builder.setCancelable(false)
+
+        builder.setNegativeButton("Close") { dialog, which ->
+            dialog.cancel()
+        }
+
+        val alertDialog = builder.create()
+        alertDialog.show()
+    }
 }
