@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="contributors_names">
+        <item>MANAGERS</item>
+        <item>Marcin Kołacz</item>
+        <item>Alena Buroňová</item>
+        <item>Eva Vičková</item>
+        <item>DEVELOPERS</item>
+        <item>Mateusz Mazurek</item>
+        <item>Mateusz Morawski</item>
+        <item>Mateusz Cibor</item>
+        <item>Kuba Sobieraj</item>
+        <item>GRAPHIC DESIGNERS</item>
+        <item>Viktorie Rederová</item>
+        <item>Valentýna Chabadová</item>
+        <item>Karolína Velebilová</item>
+        <item>Thomáš Brchnel</item>
+        <item>Ondřej Fusek</item>
+        <item>Daniel Ištanek</item>
+        <item>Adam Lapuník</item>
+        <item>Daniel Plecháček</item>
+        <item>Ondřej Pražák</item>
+        <item>Tobiáš Volný</item>
+    </string-array>
+</resources>

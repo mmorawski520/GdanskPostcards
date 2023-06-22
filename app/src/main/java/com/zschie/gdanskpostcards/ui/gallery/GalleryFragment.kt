@@ -1,7 +1,9 @@
 package com.zschie.gdanskpostcards.ui.gallery
 
 import android.app.AlertDialog
-import android.content.Context
+import android.animation.ArgbEvaluator
+import android.animation.ObjectAnimator
+import android.graphics.Color
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -11,6 +13,7 @@ import android.view.animation.TranslateAnimation
 import android.widget.Toast
 import androidx.annotation.DrawableRes
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.zschie.gdanskpostcards.R
 import com.zschie.gdanskpostcards.databinding.FragmentGalleryBinding
 
@@ -28,6 +31,7 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
     // onDestroyView.
     private val binding get() = _binding!!
+    private var index = 0;
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -47,16 +51,30 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
             )
         }
 
+        binding.imageView.setImageResource(photos[index].imageId);
+
         binding.btnNext.setOnClickListener {
-            binding.imageView.startAnimation(slide(400f))
+            if(index < photos.size - 1) {
+                binding.imageView.startAnimation(slide(400f))
+                this.index++
+                binding.imageView.setImageResource(photos[index].imageId);
+           }
         }
 
         binding.btnPrev.setOnClickListener {
-            binding.imageView.startAnimation(slide(-400f))
+            if(index > 0 ) {
+                binding.imageView.startAnimation(slide(-400f))
+                this.index--;
+                binding.imageView.setImageResource(photos[index].imageId);
+            }
         }
 
         binding.btnInfo.setOnClickListener {
             this.onBackPressed("some text")
+        }
+
+        binding.returnBtn.setOnClickListener {
+            findNavController().popBackStack()
         }
 
         return binding.root
@@ -80,6 +98,8 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
         return animation
     }
+
+
 
     fun onBackPressed(desc: String) {
         val builder = AlertDialog.Builder(context)

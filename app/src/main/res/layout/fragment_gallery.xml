@@ -14,7 +14,6 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
-
         <ImageView
             android:id="@+id/imageView"
             android:layout_width="0dp"
@@ -23,6 +22,7 @@
             android:scaleType="fitXY"
             android:src="@drawable/ic_launcher_background"
             android:contentDescription="TODO" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -62,15 +62,27 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         >
+        <Button
+            android:id="@+id/return_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:drawable/ic_menu_revert"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+        <Space
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
 
         <ImageButton
             android:id="@+id/btnInfo"
-            android:layout_width="32dp"
-            android:layout_height="32dp"
+            android:layout_width="42dp"
+            android:layout_height="42dp"
             android:layout_gravity="center"
             android:layout_margin="12dp"
             android:background="@drawable/circle_info_solid"
             android:contentDescription="@string/app_name"
             tools:ignore="TouchTargetSizeCheck"></ImageButton>
+
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
