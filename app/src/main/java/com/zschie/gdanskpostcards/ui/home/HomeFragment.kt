@@ -23,7 +23,7 @@ class HomeFragment : Fragment() {
         val root: View = binding.root
 
         binding.startBtn.setOnClickListener {
-            findNavController().navigate(R.id.nav_gallery)
+            findNavController().navigate(R.id.nav_gallery_selector)
         }
 
         binding.infoBtn.setOnClickListener {
