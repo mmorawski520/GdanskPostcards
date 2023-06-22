@@ -80,7 +80,7 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
         }
 
         binding.btnInfo.setOnClickListener {
-            this.onBackPressed(photos[0].info.toString())
+            this.onBackPressed(photos[index].info.toString())
         }
 
         binding.returnBtn.setOnClickListener {
