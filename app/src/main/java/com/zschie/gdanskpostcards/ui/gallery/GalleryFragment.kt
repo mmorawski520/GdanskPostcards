@@ -20,9 +20,11 @@ data class PhotoInfo(
 )
 
 
-class GalleryFragment(photos: List<PhotoInfo> = listOf()) : Fragment() {
+open class GalleryFragment(private val startsWith: String) : Fragment() {
 
     private var _binding: FragmentGalleryBinding? = null
+
+    private lateinit var photos: List<PhotoInfo>
 
     // onDestroyView.
     private val binding get() = _binding!!
@@ -33,6 +35,17 @@ class GalleryFragment(photos: List<PhotoInfo> = listOf()) : Fragment() {
         savedInstanceState: Bundle?
     ): View {
         _binding = FragmentGalleryBinding.inflate(inflater, container, false)
+
+        photos = drawableFields.filter {
+            it.name.startsWith(startsWith)
+        }.map { photo ->
+            PhotoInfo(
+                photo.getInt(null),
+                R.string::class.java.fields.find {
+                    it.name.startsWith(photo.name, ignoreCase = true)
+                }?.let { id -> resources.getString(id.getInt(null)) }
+            )
+        }
 
         binding.btnNext.setOnClickListener {
             binding.imageView.startAnimation(slide(400f))
@@ -83,5 +96,9 @@ class GalleryFragment(photos: List<PhotoInfo> = listOf()) : Fragment() {
 
         val alertDialog = builder.create()
         alertDialog.show()
+    }
+
+    companion object {
+        val drawableFields = R.drawable::class.java.fields.filter { it.name.startsWith("blured_") }
     }
 }
