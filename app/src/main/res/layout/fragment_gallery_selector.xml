@@ -13,7 +13,12 @@
         android:layout_gravity="center"
         android:orientation="vertical"
         tools:ignore="UselessParent">
-
+        <Button
+            android:id="@+id/return_btn"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:background="@android:drawable/ic_menu_revert"
+          />
         <TextView
             android:id="@+id/textView"
             android:layout_width="match_parent"

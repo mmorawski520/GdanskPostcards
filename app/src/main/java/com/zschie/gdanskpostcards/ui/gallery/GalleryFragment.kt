@@ -12,6 +12,7 @@ import android.view.animation.Animation
 import android.view.animation.TranslateAnimation
 import androidx.annotation.DrawableRes
 import androidx.fragment.app.Fragment
+import androidx.navigation.fragment.findNavController
 import com.zschie.gdanskpostcards.R
 import com.zschie.gdanskpostcards.databinding.FragmentGalleryBinding
 
@@ -58,6 +59,10 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
 
         binding.btnInfo.setOnClickListener {
             this.onBackPressed("some text")
+        }
+
+        binding.returnBtn.setOnClickListener {
+            findNavController().popBackStack()
         }
 
         return binding.root

@@ -40,6 +40,10 @@ class GallerySelectorFragment : Fragment() {
             findNavController().navigate(R.id.other_gallery)
         }
 
+        binding.returnBtn.setOnClickListener {
+            findNavController().popBackStack()
+        }
+
         return binding.root
     }
 
