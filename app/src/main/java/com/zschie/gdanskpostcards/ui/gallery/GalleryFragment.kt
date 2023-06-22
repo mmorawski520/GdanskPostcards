@@ -19,7 +19,7 @@ data class PhotoInfo(
 )
 
 
-class GalleryFragment(photos: List<PhotoInfo>) : Fragment() {
+class GalleryFragment(photos: List<PhotoInfo> = listOf()) : Fragment() {
 
     private var _binding: FragmentGalleryBinding? = null
 
