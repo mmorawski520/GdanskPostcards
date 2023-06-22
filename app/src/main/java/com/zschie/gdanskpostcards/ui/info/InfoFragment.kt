@@ -28,7 +28,7 @@ class InfoFragment : Fragment() {
         names.forEach { name ->
             val textView = TextView(requireContext())
             textView.text = name
-            if(name == "DEVELOPERS" || name == "GRAPHIC DESIGNERS" || name == "MANAGER") {
+            if(name == "DEVELOPERS" || name == "GRAPHIC DESIGNERS" || name == "MANAGERS") {
                 textView.setTextSize(TypedValue.COMPLEX_UNIT_SP, 20F)
                 textView.setTextColor(Color.parseColor("#FFFFFF"))
                 textView.setTypeface(null, Typeface.BOLD)
