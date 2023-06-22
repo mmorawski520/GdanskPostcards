@@ -25,8 +25,37 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
+        android:id="@+id/gdynia_gallery"
+        android:name="com.zschie.gdanskpostcards.ui.gallery.GdyniaGalleryFragment"
+        android:label="Gdynia"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/gdansk_gallery"
+        android:name="com.zschie.gdanskpostcards.ui.gallery.GdanskGalleryFragment"
+        android:label="Gdansk"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/sopot_gallery"
+        android:name="com.zschie.gdanskpostcards.ui.gallery.SopotGalleryFragment"
+        android:label="Sopot"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
+        android:id="@+id/other_gallery"
+        android:name="com.zschie.gdanskpostcards.ui.gallery.OtherGalleryFragment"
+        android:label="Other"
+        tools:layout="@layout/fragment_gallery" />
+
+    <fragment
         android:id="@+id/nav_info"
         android:name="com.zschie.gdanskpostcards.ui.info.InfoFragment"
         android:label="@string/menu_info"
         tools:layout="@layout/fragment_info" />
+    <fragment
+        android:id="@+id/nav_gallery_selector"
+        android:name="com.zschie.gdanskpostcards.ui.gallery_selector.GallerySelectorFragment"
+        android:label="@string/menu_info"
+        tools:layout="@layout/fragment_gallery_selector" />
 </navigation>
