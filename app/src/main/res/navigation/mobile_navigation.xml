@@ -31,7 +31,7 @@
         tools:layout="@layout/fragment_info" />
     <fragment
         android:id="@+id/nav_gallery_selector"
-        android:name="com.zschie.gdanskpostcards.GallerySelector"
+        android:name="com.zschie.gdanskpostcards.ui.gallery_selector.GallerySelectorFragment"
         android:label="@string/menu_info"
         tools:layout="@layout/fragment_gallery_selector" />
 </navigation>
