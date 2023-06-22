@@ -23,7 +23,7 @@
                 android:layout_weight="1"
                 android:scaleType="fitXY"
                 android:src="@drawable/ic_launcher_background"
-                android:contentDescription="@string/fragment_gallery_img_content_description" />
+                android:contentDescription="@string/gallery_img_content_description" />
 
     </LinearLayout>
 
@@ -39,7 +39,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="12dp"
                 android:background="@drawable/circle_play_animated"
-                android:contentDescription="@string/fragment_gallery_backward_content_description"
+                android:contentDescription="@string/gallery_backward_content_description"
                 android:rotation="180" />
 
         <Space
@@ -54,7 +54,7 @@
                 android:layout_gravity="center"
                 android:layout_margin="12dp"
                 android:background="@drawable/circle_play_animated"
-                android:contentDescription="@string/fragment_gallery_forward_content_description" />
+                android:contentDescription="@string/gallery_forward_content_description" />
     </LinearLayout>
 
     <LinearLayout

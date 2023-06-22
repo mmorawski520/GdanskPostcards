@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
-            android:text="Menu"
+            android:text="@string/gallery_selector_header"
             android:textSize="34sp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -40,7 +40,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:background="@drawable/custom_button_1"
-        android:text="Gdansk"
+        android:text="@string/gallery_selector_gdansk"
         android:textColor="#FFFFFF"
         android:textSize="16sp" />
 
@@ -50,7 +50,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:background="@drawable/custom_button_2"
-        android:text="Gdynia"
+        android:text="@string/gallery_selector_gdynia"
         android:textColor="#FFFFFF"
         android:textSize="16sp" />
 
@@ -60,7 +60,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:background="@drawable/custom_button_3"
-        android:text="Sopot"
+        android:text="@string/gallery_selector_sopot"
         android:textColor="#FFFFFF"
         android:textSize="16sp" />
 
@@ -70,7 +70,7 @@
         android:layout_height="wrap_content"
         android:layout_margin="5dp"
         android:background="@drawable/custom_button_4"
-        android:text="Other"
+        android:text="@string/gallery_selector_other"
         android:textColor="#FFFFFF"
         android:textSize="16sp" />
 

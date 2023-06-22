@@ -16,6 +16,9 @@
         <action
                 android:id="@+id/action_nav_home_to_nav_info"
                 app:destination="@id/nav_info" />
+        <action
+                android:id="@+id/action_nav_home_to_nav_gallery_selector"
+                app:destination="@id/nav_gallery_selector" />
     </fragment>
 
     <fragment
@@ -57,5 +60,18 @@
         android:id="@+id/nav_gallery_selector"
         android:name="com.zschie.gdanskpostcards.ui.gallery_selector.GallerySelectorFragment"
         android:label="@string/menu_info"
-        tools:layout="@layout/fragment_gallery_selector" />
+        tools:layout="@layout/fragment_gallery_selector" >
+        <action
+                android:id="@+id/action_nav_gallery_selector_to_gdansk_gallery"
+                app:destination="@id/gdansk_gallery" />
+        <action
+                android:id="@+id/action_nav_gallery_selector_to_gdynia_gallery"
+                app:destination="@id/gdynia_gallery" />
+        <action
+                android:id="@+id/action_nav_gallery_selector_to_sopot_gallery"
+                app:destination="@id/sopot_gallery" />
+        <action
+                android:id="@+id/action_nav_gallery_selector_to_other_gallery"
+                app:destination="@id/other_gallery" />
+    </fragment>
 </navigation>
