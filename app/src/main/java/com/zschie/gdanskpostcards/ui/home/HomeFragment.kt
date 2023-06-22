@@ -30,6 +30,7 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.nav_info)
         }
         return root
+        
     }
 
     override fun onDestroyView() {

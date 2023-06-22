@@ -116,6 +116,9 @@ open class GalleryFragment(private val startsWith: String) : Fragment() {
             dialog.cancel()
         }
 
+        builder.setIcon(R.drawable.circle_info_solid);
+
+
         val alertDialog = builder.create()
         alertDialog.show()
     }
