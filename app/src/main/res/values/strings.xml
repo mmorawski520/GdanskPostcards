@@ -27,20 +27,22 @@
     <string name="blured_sopot_boat.jpg">The pirate ship will take you on a water adventure around the port of Sopot.</string>
     <string name="blured_sopot_house.JPG">The Crooked House, completed in 2004, is located in Dolny Sopot. It is considered a symbol of the modern world. It harmoniously combines the worlds of culture and art</string>
     <string name="blured_sopot_nothing.jpeg">Sopot is one of the most famous Polish towns in the Czech Republic, especially thanks to its music festival Sopot Festival, popular in the former Czechoslovakia especially in the 1970s and 1980s</string>
-    <string name="blured_sopot_pier.jpg">We are having a good time in Sopot.</string>
+    <string name="blured_sopot_pier.jpg">Sopot is a fantastic holiday destination with sunny beaches, the longest wooden pier in Europe, and an active nightlife provided by its numerous bars, pubs and clubs.</string>
     <string name="blured_sopot_sea.JPG">You can sail to the cities of Gdańsk, Sopot, Gdynia, but also to other countries from Poland by ferry.</string>
     <string name="blured_sopot_ship.jpg">The Pier in Sopot is the longest pier in the Baltic Sea and the longest wooden pier in Europe. The pier is 511.5 meters long and 10 meters wide</string>
-    <string name="blured_sopot_tower.JPG">Sopot is a fantastic holiday destination with sunny beaches, the longest wooden pier in Europe, and an active nightlife provided by its numerous bars, pubs and clubs.</string>
+    <string name="blured_sopot_tower.JPG">Among all the seaside resorts competing to be the summer capital of Poland, Sopot seems the most deserving. This is a fantastic holiday destination with sunny beaches, the longest wooden pier in Europe, and an active nightlife provided by its numerous bars, pubs and clubs. Sopot lighthouse is in the background.</string>
 
     <!-- Gdynia -->
     <string name="blured_gdynia_city_beach.jpg">Gdynia City Beach is undoubtedly one of the most beautiful beaches on the Polish coast. It is situated near the port.</string>
     <string name="blured_gdynia_dar_pomorza.jpg">The Dar Pomorza is a Polish full-rigged sailing ship built in 1909 which is preserved in Gdynia as a museum ship. She has served as a sail training ship.</string>
 
     <!-- Other -->
-1   <string name="blured_other_siberian_path.jpg">The Siberian house was brought to Poland from Zapleskin, one of the oldest places where Poles were sent. "Sybirak" traveled about 8,100 km, through: Ust, Tashkent, Omsk, Moscow, Minsk…</string>
+    <string name="blured_other_ferris_wheeljpeg">This wheel is called Amber sky. It has modern cabins. It can take you to a height of 50 meters where you will have a pleasant view of the historic city of Gdansk.</string>
+    <string name="blured_other_first.jpeg">This is a modern IT laboratory from one of the best schools in Gdynia.</string>
     <string name="blured_other_siberian_one.JPG">The Siberian House is a gift to Poles from exiles living in Siberia who wanted to remind Poles in the country that Poles live in Siberia all the time and dream of returning to their homeland.</string>
+1   <string name="blured_other_siberian_path.jpg">The Siberian house was brought to Poland from Zapleskin, one of the oldest places where Poles were sent. "Sybirak" traveled about 8,100 km, through: Ust, Tashkent, Omsk, Moscow, Minsk…</string>
     <string name="blured_other_siberian_second.JPG">The Siberian house is probably about 240 years old. It is built from three-hundred-year-old Angara pine logs.</string>
     <string name="blured_other_szymbark.jpg">Kaszubska deska, a record board measured 36 m and 83 cm. It was 6–7cm thick and weighed over 1100kg. It took 50 men to hang it on the wall.</string>
-    <string name="szymbark2">Szymbark is a small village in northern Poland, located in the Pomeranian Voivodeship, near the city of Gdańsk. It is known for its reconstructed wooden village that resembles a traditional Polish village from the 18th and 19th centuries. You can walk through narrow streets surrounded by traditional wooden houses and discover the history of the Polish countryside. One of the main attractions in Szymbark is house  which is built upside down. You can walk through the interior of this house and experience optical illusions and entertainment.</string>
+    <string name="blured_other_upsidedown_house.jpg">In the northern Polish village of Szymbark, there is a house turned upside down. It serves as a reminder of the former regime, when, according to the authors, everything was</string>
 
 </resources>
