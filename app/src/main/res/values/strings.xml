@@ -18,9 +18,20 @@
     <!-- Picture descriptions -->
 
     <!-- Gdansk -->
-    <string name="blured_gdansk_city.jpg">Gdańsk is a city in northern Poland with a population of around 470,000. It is a major seaport on the Baltic Sea and has a rich history as a trading hub. The city\'s architecture is a blend of Gothic, Renaissance, and Baroque styles. Gdańsk\'s Old Town, a UNESCO World Heritage Site, is famous for its charming streets and vibrant atmosphere. It is also known for its role in the Solidarity movement and offers a variety of cultural attractions and a lively waterfront.</string>
+    <string name="blured_gdansk_amber.jpg">Gdansk deserves the title of the World Capital of Amber. Jewellery and utensils of amber have been produced here for centuries. The Museum of Amber displays natural lumps of the resin and its inclusions, as well as finished products, e.g. jewellery, cutlery and chests.</string>
+    <string name="blured_gdansk_basilica.jpg">Basilica of St. Mary of the Assumption of the Blessed Virgin Mary in Gdańsk (Bazylika Mariacka Wniebowzięcia Najświętszej Maryi Panny w Gdańsku)</string>
+    <string name="blured_gdansk_city.jpg">Gdansk is a city in a northern Poland with a population of around 470,000. It is a major seaport on the Baltic Sea and has a rich history as a trading hub.</string>
+    <string name="blured_gdansk_ferris_wheel.png">AmberSky is a 50 metres high Ferris wheel in Gdansk. It was opened to the public in June 2016.</string>
     <string name="blured_gdansk_fountain_second.jpg">The Neptune fountain was created on the initiative of the mayor Bartlomiej Schachmann and the city council. The fountain dates from the 17th century. After the end of the Second World War, the fountain was restored and was fully operational 1957 again.</string>
     <string name="blured_gdansk_fountain.jpg">Neptune\'s Fountain in Gdańsk is a famous landmark, built in 1633. It symbolizes wealth and power and features a 10-meter statue of the sea god Neptune. Originally made of bronze, it was dismantled during World War II and later restored.</string>
+    <string name="blured_gdansk_museum.jpg">The European Solidarity Centre is just one of the city\'s top sights and experiences. It is a modern museum and library devoted to the history of Solidarity, the Polish trade union and civil resistance movement, and other opposition movements of Communist Eastern Europe. It opened on 31 August 2014.</string>
+    <string name="blured_gdansk_ship.jpg">Gdansk is a beautiful city, but it is even more beautiful when it gets dark</string>
+    <string name="blured_gdansk_soldek.jpg">The museum ship Sołdek is anchored on the Motlawa River and was the first ship built in post-war Poland</string>
+    <string name="blured_gdansk_third.jpeg">In Gdansk, one can enjoy a lot of fun, there are many museums and attractions for young and old.</string>
+    <string name="blured_gdansk_train.jpg">Gdańsk Główny (formerly named Danzig Hauptbahnhof in German) is the main railway station in Gdansk, northern Poland</string>
+    <string name="blured_gdansk_waterfront.jpg">Gdańsk is also known for its role in the Solidarity movement and offers a variety of cultural attractions and a lively waterfront.</string>
+    <string name="blured_gdansk_wwii_museum.jpg">Opened in 2016, this striking piece of modern architecture has rapidly become one of Gdansk\'s must-visit attractions, tracing the fate of Poland during the world\'s greatest conflict and focusing on the human suffering it caused. Covering 5000 sq. metres, the museum is divided into 18 sections, each one looking at an aspect of WWII and arranged in chronological order.</string>
+
 
     <!-- Sopot -->
     <string name="blured_sopot_beach.jpg">The large sunny sandy beach, which is bordered by the Baltic Sea, allows you to play summer sports such as volleyball, as well as pleasant relaxation and well-being.</string>
@@ -32,9 +43,15 @@
     <string name="blured_sopot_ship.jpg">The Pier in Sopot is the longest pier in the Baltic Sea and the longest wooden pier in Europe. The pier is 511.5 meters long and 10 meters wide</string>
     <string name="blured_sopot_tower.JPG">Among all the seaside resorts competing to be the summer capital of Poland, Sopot seems the most deserving. This is a fantastic holiday destination with sunny beaches, the longest wooden pier in Europe, and an active nightlife provided by its numerous bars, pubs and clubs. Sopot lighthouse is in the background.</string>
 
+
     <!-- Gdynia -->
+    <string name="blured_gdynia_aquarium.jpg">Gdynia Aquarium is stuffed with over 2,000 creatures, such as sharks, piranhas or turtles. Exhibits cover marine life from across the globe. And the giant 44 kg cod – the largest creature ever caught in the Baltic – is dangling over your head.</string>
+    <string name="blured_gdynia_blyskawica.jpg">Błyskawica is a Polish destroyer. It was built for the Polish Navy in 1935–1937 in Great Britain.</string>
     <string name="blured_gdynia_city_beach.jpg">Gdynia City Beach is undoubtedly one of the most beautiful beaches on the Polish coast. It is situated near the port.</string>
     <string name="blured_gdynia_dar_pomorza.jpg">The Dar Pomorza is a Polish full-rigged sailing ship built in 1909 which is preserved in Gdynia as a museum ship. She has served as a sail training ship.</string>
+    <string name="blured_gdynia_general.jpg">Gdynia became Poland’s largest and busiest sea port on the Baltic coast after World War I. It is a modern city where you can have a lot of fun. You can visit two museum ships and an Aquarium in the harbour.</string>
+    <string name="blured_gdynia_port.jpg">The Port of Gdynia is the third largest port in Poland by area.</string>
+
 
     <!-- Other -->
     <string name="blured_other_ferris_wheeljpeg">This wheel is called Amber sky. It has modern cabins. It can take you to a height of 50 meters where you will have a pleasant view of the historic city of Gdansk.</string>
@@ -44,5 +61,8 @@
     <string name="blured_other_siberian_second.JPG">The Siberian house is probably about 240 years old. It is built from three-hundred-year-old Angara pine logs.</string>
     <string name="blured_other_szymbark.jpg">Kaszubska deska, a record board measured 36 m and 83 cm. It was 6–7cm thick and weighed over 1100kg. It took 50 men to hang it on the wall.</string>
     <string name="blured_other_upsidedown_house.jpg">In the northern Polish village of Szymbark, there is a house turned upside down. It serves as a reminder of the former regime, when, according to the authors, everything was</string>
+
+        <!-- Hel -->
+        <string name="blured_other_hel_lighthouse.jpg">The Hel Lighthouse stands at the end of Hel´s Peninsula on the Baltic Sea coast. It was built in 1942 and measures 41.5 metres.</string>
 
 </resources>
